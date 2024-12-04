@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // This code attempts to access a non-existent property of an element.
+    // The error occurs silently without any browser console error message.
+    // This is because the incorrect property name doesn't throw an error.
+    // Instead, it just returns undefined. 
+    alert(myDiv.nonExistentProperty);
+  </script>
+</body>
+</html>
